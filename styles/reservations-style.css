@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Poppins, 'Source Sans Pro', 'Helvetica', 'sans-serif';
+    font-family: 'Poppins', 'Source Sans Pro', 'Helvetica', 'sans-serif';
     background: #fefefe;
 }
 
@@ -91,9 +91,9 @@ nav a {
 
 nav ul li a:hover {
     transition: 0.2s;
-    color: #fefefe;
+    color: #013658;
     font-weight: bold;
-    background-color: #013658;
+    background-color: #F2CB05;
 }
 
 /*home-hero*/
@@ -124,22 +124,67 @@ main h1{
 }
 
 /*CONTAINER*/
-.form-group{
-    margin: 1px solid red;
-    padding-left: 10px;
-    padding: .5em;
-    height: 40px;
-    background-color: #418dba;
+
+form{
+    height: 360px;
+    width: 50%;
+    border: 1px black solid;
+    margin-bottom: 25px;
+    padding: 1em;
 }
 
 .form-div {
-    height: 300px;
+    height: 400px;
     background-color: #fefefe;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 5px;
+}
 
+form label{
+    font-family: 'Poppins', 'Source Sans Pro';
+    color: #013658;
+    font-weight: 550;
+    margin-bottom: 25px;
+}
+
+form input::placeholder {
+    margin-bottom: 5px;
+    color: #576f7e;
+}
+    
+form input[type="text"], form input[type="date"], form input[type="number"]{
+    width: 95%;
+    padding: 10px 0px 0px 0px;
+    margin-bottom: .5em;
+    margin-right: 10px;
+    margin-left: 15px;
+    font-family: 'Poppins', 'Sans-serif';
+    padding-left: 10px;
+    color: #25475c;
+}
+
+
+form label{
+    margin-top: .5em;
+}
+
+
+.form-group{
+    padding-left: 10px;
+    background-color: #418dba;
+}
+
+
+/*Chrome*/
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+/*Firefox*/
+input[type=number]{
+    -moz-appearance: textfield;
 }
 
 .form-group input, textarea{
@@ -156,9 +201,26 @@ main h1{
 }
 
 .butonlagot{
-    border: 1px red solid;
     text-align: center;
+    margin-top: .25%;
 }
+
+.butonlagot button{
+    background-color: #F2CB05;
+    width: 125px;
+    padding: 2%;
+    font-weight: 800;
+    color: #013658;
+    border: none;
+    border-radius: 14px;
+    height: 40px;
+}
+
+.butonlagot button:hover{
+    box-shadow: 6px 4px 12px 3px rgba(41,32,1,0.29);
+    border: 2px #013658 solid;
+}
+
 /*CONTACTS*/
 
 .home-contact {
@@ -226,7 +288,7 @@ footer {
 
 .footer-text {
     color: #013658;
-    font-family: Poppins, 'Source Sans Pro';
+    font-family: 'Poppins', 'Source Sans Pro';
     font-size: 10px;
     font-weight: 400;
     line-height: 1.5;

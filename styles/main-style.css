@@ -91,9 +91,9 @@ nav a {
 
 nav ul li a:hover {
     transition: 0.2s;
-    color: #fefefe;
+    color: #013658;
     font-weight: bold;
-    background-color: #013658;
+    background-color: #F2CB05;
 }
 
 /*home-hero*/
@@ -122,8 +122,8 @@ main {
 }
 
 .home-introduction-image:hover{
-    box-shadow: -1px -1px 21px 3px rgba(0,0,0,0.28);
-    transform: scale(1.04);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
     transition: .4s;
     margin-top: 2%;
     margin-bottom:2%;
@@ -190,7 +190,7 @@ main {
     margin: 0.5em;
     max-width: 400px;
     max-height: 600px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     transition: 0.2s;
     overflow: hidden;
 }
@@ -297,6 +297,13 @@ main {
 .moments-image1 img{
     width: 100%;
     margin-top: .5em;
+    object-fit: cover;
+}
+
+.moments-image img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
 }
 
 .moments-image1-1{
@@ -330,10 +337,6 @@ main {
     width: 100%;
     border-radius: 20px;
     margin-top: .5em;
-}
-
-.moments-image:hover{
-
 }
 
 /*REVIEWS*/
@@ -412,10 +415,20 @@ main {
 
 .contact-logo img{
     float: left;
-    height: 150px;
+    height: 125px;
     margin-left: 50px;
     margin-top: 50px;
 }
+
+.contact-logo img:hover{
+    transform: scale(1.5em);
+    float: left;
+    height: 130px;
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: .2s;
+}
+
 
 
 /* styles for footer */
